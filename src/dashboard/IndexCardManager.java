@@ -33,33 +33,27 @@ public class IndexCardManager implements IndexCardDAO {
 		add("Nutrition", "Health");
 
 		add("Finances");
-		add("Interests");
-		add("Career");
-		add("House");
-		add("Vehicles");
-		add("Hobbies");
-		add("Organization");
-
 		add("Bills", "Finances");
-		add("Income", "Finances");
-		add("Accounts", "Finances");
-		add("Maintenance", "House");
-		add("Cleaning", "House");
-		add("2010 Toyota Prius", "Vehicles");
-		add("Bicycles", "Vehicles");
-		add("Salsa Vaya", "Bicycles");
-		add("Dahon MuP8", "Bicycles");
-		add("Photography", "Hobbies");
-		add("Music", "Hobbies");
-		add("Music Composition", "Music");
-		add("Guitar", "Music");
-		add("Other People's Art", "Interests");
-		add("Other People's Music", "Music", "Other People's Art");
-		add("Job Leads", "Career");
-		add("Education", "Career");
-		add("Computers, Phone, Online", "Organization");
+		add("Freelance Work", "Finances");
+		add("Web Design", "Freelance Work");
+		
+		add("Interests");
+		add("Bicycling", "Interests", "Fitness");
+		add("Photography", "Freelance Work", "Interests");
+		add("Travel");
+		
+		add("Education");
+		add("Self-Study", "Education");
+		add("Skill Distillery", "Education");
 
-		addItem("15 minutes of cardio", "Daily", "Health");
+		addItem("Crossfit - Tuesdays and Thursdays", "Daily", "Fitness");
+		addItem("Bike to work 1x/week", "Daily",  "Bicycling");
+		addItem("Photo trip - Great Sand Dunes", "Daily",  "Travel", "Photography");
+		addItem("Take pics at Pat & Emma's wedding - May 22nd", "Daily",  "Photography");
+		addItem("Pay utilities by 10th of month", "Daily",  "Bills");
+		addItem("Ruby on Rails tutorials - 1 lesson / day", "Daily",  "Web Design", "Self-Study");
+		addItem("Weekend project - due Monday at noon", "Daily",  "Skill Distillery");
+		addItem("Quit smoking", "Daily",  "Health");
 
 	}
 

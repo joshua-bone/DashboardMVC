@@ -37,7 +37,7 @@
 	
 	<!-- Show the DashboardItems on this card -->
 	<c:forEach var="item" items="${card.items}">
-		<a href="viewDashboardItem.do?cid=<c:out value="${item.customID}"/>"><c:out value="${item.name}"/></a>
+		<a href="viewDashboardItem.do?cid=<c:out value="${item.customID}"/>"><c:out value="${item.name}"/></a><br>
 	</c:forEach>
 	
 	<hr>
